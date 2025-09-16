@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Tesis Resume</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav id="myNavbar" class="links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#work" class="nav-link">Work Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#interests" class="nav-link">Interests</a>
+        <a href="#declaration" class="nav-link">Declaration</a>
+    </nav>
+
+    <section id="home">
+        <header>
+            <button id="switchButton" style="position: absolute; left: 10px;">Switch Theme</button>
+            <h1>
+                <center>Michael Tesis<br>
+                    Digital Engineering Student</center>
+            </h1>
+        </header>
+    </section>
+
+    <section id="about" class="sections">
+        <h3>About Me</h3><br>
+        <div id="greeting"></div>
+        I am a second year <span class="blinking-element"><mark>Honors</mark></span>
+        undergraduate student at <em>Long Island University</em> pursuing a bachelor
+        degree in <span class="blinking-element"><strong>Digital Engineering</strong></span>.
+        In 2024 I graduated from <em>Leon M. Goldstein High School</em> with a
+        <span class="blinking-element"><mark>4.0 GPA</mark></span><mark> and
+            <span class="blinking-element">Honors</span></mark>. While I was in
+        High School, I was an active participant of the
+        <span class="blinking-element"><strong>Science Olympiad</strong>
+        </span> team and tutored at the <em>Bay Academy</em> Science Olympiad team.
+        The <em>Bay Academy</em> Science Olympiad team has been <mark>the best
+            in New York City</mark> for many years and became the only New York City
+        team to make it to <mark>Nationals</mark>. I have also participated in
+        <strong>Robotics</strong> competitions and clubs. My interests in
+        technology and science led to me to choose <span class="blinking-element">
+            <strong>Digital Engineering</strong></span>, which combined them
+        together, as my field of study. I completed two semesters at <em>LIU</em>
+        with a <span class="blinking-element"><mark>GPA of 4.0</mark></span> and
+        plan to mantain this GPA through the rest of my studies at the
+        university. After my graduation I plan to find a position in the
+        <abbr title="Information Technology">IT</abbr> industry, preferably
+        involving <abbr title="Artificial Intelligence">AI</abbr> and other
+        cutting edge technologies. Currently I am looking for projects or
+        internships that would allow me to obtain practical experience in my field.
+    </section>
+
+    <section id="work" class="sections">
+        <h3>Work Experience</h3>
+        <ul>
+            <div class="job-list">
+                <div class="job-entry hidden">
+                    <li>Tutor, Bay Academy Science Olympiad Team, 4 years
+                        <ol id="hoverListOne">
+                            <li>
+                                <div data-tooltip="10% of the time.">Selected and assigned events.</div>
+                            </li>
+                            <li>
+                                <div data-tooltip="20% of the time.">Prepared study materials and resources.</div>
+                            </li>
+                            <li>
+                                <div data-tooltip="30% of the time.">Taught scientific concepts and skills.</div>
+                            </li>
+                            <li>
+                                <div data-tooltip="30% of the time.">Trained students in hands-on events.</div>
+                            </li>
+                            <li>
+                                <div data-tooltip="10% of the time.">Organized practice tests and mock competitions.
+                                </div>
+                            </li>
+                        </ol>
+                        <details>
+                            <summary>Additional Responsibilities</summary>
+                            <ul>
+                                <li>Mentored and motivated students.</li>
+                                <li>Promoted collaboration and team spirit.</li>
+                                <li>Resolved conflicts or issues.</li>
+                            </ul>
+                        </details>
+                    </li>
+                </div>
+                <br>
+                <div class="job-entry hidden">
+                    <li>Tennis Coach, City Parks Foundation, 4 months
+                        <ol id="hoverListTwo">
+                            <li>
+                                <div data-tooltip="5% of the time.">Organized group tennis sessions.</div>
+                            </li>
+                            <li>
+                                <div data-tooltip="5% of the time.">Prepared tennis courts for tennis sessions.</div>
+                            </li>
+                            <li>
+                                <div data-tooltip="10% of the time.">Created lesson plans.</div>
+                            </li>
+                            <li>
+                                <div data-tooltip="20% of the time.">Led warm up excercises.</div>
+                            </li>
+                            <li>
+                                <div data-tooltip="50% of the time.">Performed tennis drills.</div>
+                            </li>
+                            <li>
+                                <div data-tooltip="10% of the time.">Gave advice and corrected errors.</div>
+                            </li>
+                        </ol>
+                        <details>
+                            <summary>Additional Responsibilities</summary>
+                            <ul>
+                                <li>Served as an umpire at competitions.</li>
+                                <li>Provided equipment for tennis sessions.</li>
+                                <li>Assisted in organizing City Parks Foundation events.</li>
+                            </ul>
+                        </details>
+                    </li>
+                </div>
+            </div>
+        </ul>
+    </section>
+
+    <section id="education" class="sections">
+        <h3>Education</h3><br>
+        <button id="sort-gpa-btn">Sort by GPA</button>
+        <table id="education-table">
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Graduation Date</th>
+                <th>GPA</th>
+                <th>Achievements</th>
+            </tr>
+            <tr>
+                <td>Middle School Diploma</td>
+                <td>
+                    <div class="logo-container">
+                        <img src="Bay Academy.jpg" alt="Bay Academy Logo" class="institution-logo">
+                    </div><br>Bay Academy
+                </td>
+                <td>June 2020</td>
+                <td>3.9</td>
+                <td>Academic Excellence Medal</td>
+            </tr>
+            <tr>
+                <td>High School Diploma</td>
+                <td>
+                    <div class="logo-container">
+                        <img src="Goldstein.png" alt="Goldstein Logo" class="institution-logo">
+                    </div><br>Leon M. Goldstein High School
+                </td>
+                <td>June 2024</td>
+                <td>4.0</td>
+                <td>Advanced Regents Diploma with Honors</td>
+            </tr>
+            <tr>
+                <td>Digital Engineering Bachelor Degree</td>
+                <td>
+                    <div class="logo-container">
+                        <img src="LIU.jpg" alt="LIU Logo" class="institution-logo">
+                    </div><br>Long Island University
+                </td>
+                <td>May 2028</td>
+                <td>4.0</td>
+                <td>Dean's Award</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="skills" class="sections">
+        <h3>Skills</h3><br>
+        <div class="skill-levels">
+            <input type="radio" id="beginner" name="skill-level" value="beginner" checked>
+            <label for="beginner">Beginner</label>
+
+            <input type="radio" id="intermediate" name="skill-level" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+
+            <input type="radio" id="advanced" name="skill-level" value="advanced">
+            <label for="advanced">Advanced</label>
+        </div>
+        <br>
+        <fieldset id="beginner-content">
+            <legend><strong>Beginner:</strong></legend>
+            <ul>
+                <li>
+                    <label for="databases">Databases:</label>
+                    <div class="progress-container"><progress id="databases" class="progress-bar" value="40"
+                            max="100"></progress></div>
+                </li>
+                <li>
+                    <label for="networking">Networking:</label>
+                    <div class="progress-container"><progress id="networking" class="progress-bar" value="20"
+                            max="100"></progress></div>
+                </li>
+                <li>
+                    <label for="operating systems">Operating Systems:</label>
+                    <div class="progress-container"><progress id="operating systems" class="progress-bar" value="40"
+                            max="100"></progress></div>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset id="intermediate-content">
+            <legend><strong>Intermediate:</strong></legend>
+            <ul>
+                <li>
+                    <label for="python">Python:</label>
+                    <div class="progress-container"><progress id="python" class="progress-bar" value="60"
+                            max="100"></progress></div>
+                </li>
+                <li>
+                    <label for="javascript">JavaScript:</label>
+                    <div class="progress-container"><progress id="javascript" class="progress-bar" value="60"
+                            max="100"></progress></div>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset id="advanced-content">
+            <legend><strong>Advanced:</strong></legend>
+            <ul>
+                <li>
+                    <label for="c++">C++:</label>
+                    <div class="progress-container"><progress id="c++" class="progress-bar" value="90"
+                            max="100"></progress></div>
+                </li>
+                <li>
+                    <label for="html">HTML:</label>
+                    <div class="progress-container"><progress id="html" class="progress-bar" value="100"
+                            max="100"></progress></div>
+                </li>
+                <li>
+                    <label for="css">CSS:</label>
+                    <div class="progress-container"><progress id="css" class="progress-bar" value="100"
+                            max="100"></progress></div>
+                </li>
+                <li>
+                    <label for="data structures">Data Structures:</label>
+                    <div class="progress-container"><progress id="data structures" class="progress-bar" value="90"
+                            max="100"></progress></div>
+                </li>
+            </ul>
+        </fieldset>
+    </section>
+
+    <section id="projects" class="sections">
+        <h3>Projects</h3><br>
+        <div id="filter-options">
+            <label><input type="checkbox" value="AI" class="tech-filter"> AI</label> &nbsp;
+            <label><input type="checkbox" value="Python" class="tech-filter"> Python</label> &nbsp;
+            <label><input type="checkbox" value="kNN model" class="tech-filter"> kNN Model</label> &nbsp;
+            <label><input type="checkbox" value="Javascript" class="tech-filter"> JavaScript</label> &nbsp;
+          </div>
+          <br>
+        <center>
+            <div class="flip-card" data-technologies="AI,Python,kNN model">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>AI OCR</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <dl>
+                            <dt>Optical Character Recognition</dt>
+                            <dd>AI model that reads text from an image and outputs text that is depicted in the image.
+                            </dd>
+                            <dd>The technologies used were the k-Nearest-Neighbors algorithm, Euclidean distance
+                                formula, Alphanum and Emnest datasets, and Python.</dd>
+                            <dd><a target="_blank" href="https://github.com/misha7t/OCR-AI">Link to Project</a></dd>
+                            <dd><iframe src="OCR example.mp4"></iframe></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </section>
+
+
+    <section id="achievements" class="sections">
+        <h3>Achievements (Completed Courses)</h3>
+        <dl>
+            <dt>Object Oriented Programing I</dt>
+            <dd>Fundamental concepts of programming from an object-oriented perspective.</dd>
+            <dt>Object Oriented Programing II</dt>
+            <dd>Advanced features of the C++ programming language that are essential to the creation of complex
+                structures and their applications in designing and developing programs.</dd>
+            <dt>Calculus III</dt>
+            <dd>Advanced Calculus concepts, such as polar coordinates, vector and matrix algebra, parametric equations
+                and space curves, multivariable calculus, etc.</dd>
+            <dt>Physics I</dt>
+            <dd>The laws and principles of mechanics, thermodynamics and waves.</dd>
+            <dt>Physics II</dt>
+            <dd>Electricity, magnetism, optics and an introduction to modern physics.</dd>
+            <dt>Introduction to AI &nbsp;
+                <div class="badge-container"><span class="badge-original">Original Project</span>
+                    <div class="pulse-ring"></div>
+                </div>
+            </dt>
+            <dd>Basic AI techniques, the problems for which they are applicable, and their limitations.</dd>
+            <dt>Digital Design</dt>
+            <dd>Design at the layers of a computing platform from switches and wires to programmable machines.</dd>
+            <dt>Engineering Graphics</dt>
+            <dd>Engineering graphics and computer-aided design (CAD) using the Dassault Systems 3DS platform and CAD
+                capabilities.</dd>
+        </dl>
+    </section>
+
+    <section id="interests" class="sections">
+        <h3>Interests</h3>
+        <div class="gallery">
+            <figure data-modal="tennis" class="zoom-rotate-element zoom-rotate-element:hover">
+                <img src="tennis.png" alt="Tennis" style="width:110px;height:90px;">
+                <figcaption>Tennis</figcaption>
+            </figure>
+            <div id="tennis" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>More Details</h3>
+                    <p>I have been playing tennis since I was six years old. I have won some tournaments and was even a
+                        coach.</p>
+                </div>
+            </div>
+            <figure data-modal="table tennis" class="zoom-rotate-element zoom-rotate-element:hover">
+                <img src="table tennis.png" alt="Table Tennis" style="width:110px;height:90px;">
+                <figcaption>Table Tennis</figcaption>
+            </figure>
+            <div id="table tennis" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>More Details</h3>
+                    <p>I attended table tennis lessons and really enjoy playing this sport.</p>
+                </div>
+            </div>
+            <figure data-modal="games" class="zoom-rotate-element zoom-rotate-element:hover">
+                <img src="games.png" alt="games" style="width:110px;height:90px;">
+                <figcaption>Video Games</figcaption>
+            </figure>
+            <div id="games" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>More Details</h3>
+                    <p>Video games have been a good way to spend my free time. They help me relax and find friends.</p>
+                </div>
+            </div>
+            <figure data-modal="judo" class="zoom-rotate-element zoom-rotate-element:hover">
+                <img src="judo.png" alt="judo" style="width:90px;height:90px;">
+                <figcaption>Judo</figcaption>
+            </figure>
+            <div id="judo" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>More Details</h3>
+                    <p>I have attended judo lessons since I was a child and have won many tournaments.</p>
+                </div>
+            </div>
+            <figure data-modal="chess" class="zoom-rotate-element zoom-rotate-element:hover">
+                <img src="chess.png" alt="chess" style="width:90px;height:90px;">
+                <figcaption>Chess</figcaption>
+            </figure>
+            <div id="chess" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>More Details</h3>
+                    <p>I learned how to play chess recently. It helps me develop my analytical abilities.</p>
+                </div>
+            </div>
+            <figure data-modal="cooking" class="zoom-rotate-element zoom-rotate-element:hover">
+                <img src="cooking.png" alt="cooking" style="width:90px;height:90px;">
+                <figcaption>Cooking</figcaption>
+            </figure>
+            <div id="cooking" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>More Details</h3>
+                    <p>I have attended cooking lessons when I was in middle school and continue cooking even now.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="declaration" class="sections">
+        <h3>Closing Statement</h3><br>
+        I am looking forward for the opportunity to obtain practical development experience. I believe that my skills
+        and knowledge would be useful at any work, internship, or project related to my field.
+        <center><button id="backToTop" class="backToTopBtn"><img src="arrow up.png"
+                    style="width:40px;height:40px;"></button></center>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
