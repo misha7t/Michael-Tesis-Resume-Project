@@ -8,6 +8,11 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+  color: blue; 
+  text-decoration: none; 
+}
+
 ul,
 ol {
     padding-left: 25px;
@@ -82,8 +87,7 @@ img {
 }
 
 .active {
-    background-color: darkorange;
-    color: blueviolet;
+    background-color: rgb(236, 236, 28);
 }
 
 .sticky {
@@ -308,7 +312,7 @@ img {
   }
 
   .modal-content {
-    background-color: white;
+    background-color: var(--background-color);
     padding: 20px;
     border-radius: 8px;
     max-width: 600px;
